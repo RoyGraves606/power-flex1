@@ -154,7 +154,7 @@ header {
 /* ------------------------------ */
 .heroSec {
     background-image: url(./gymAssets/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
-    height: 80vh;
+    height: 90vh;
     background-size: cover;
     background-position: center;
 }
@@ -227,6 +227,7 @@ header {
     .heroSec{
         background-image: url(./gymAssets/Screenshot_20251114_110328.jpg);
         position: relative;
+        height:80vh;
     }
     .hero{
         justify-content: end;
