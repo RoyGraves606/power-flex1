@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>POWER FLEX | Join Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="pf-header">
+        <div class="pf-logo">POWER FLEX</div>
+
+        <nav class="pf-nav">
+            <a href="index.html">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#coaches">COACHES</a>
+            <a href="#contact">CONTACT</a>
+            <a href="join.html" class="pf-join-btn-nav active-nav">Join Us</a>
+        </nav>
+    </header>
+
+    <!-- JOIN HERO -->
+    <section class="pf-hero join-hero">
+        <div class="pf-hero-content">
+            <h1>Join POWER FLEX</h1>
+            <p>
+                Fill the form below and our team will call you within 24 hours
+                to confirm your plan, timing, and fees.
+            </p>
+        </div>
+    </section>
+
+    <!-- JOIN FORM -->
+    <section class="pf-section join-section">
+        <div class="pf-form-wrapper">
+            <h2>Membership Enquiry</h2>
+            <p class="pf-section-sub">
+                Tell us your goal and preferred program. We will design the
+                best plan for you.
+            </p>
+
+           <form action="thankyou.html" method="GET" class="pf-form">
+                <div class="pf-form-row">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="pf-form-row">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required />
+                </div>
+
+                <div class="pf-form-row">
+                    <label for="email">Email (optional)</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+
+                <div class="pf-form-row">
+                    <label for="goal">Primary Goal</label>
+                    <select id="goal" name="goal" required>
+                        <option value="">Select your goal</option>
+                        <option>Fat Loss</option>
+                        <option>Muscle Gain</option>
+                        <option>Strength</option>
+                        <option>General Fitness</option>
+                        <option>Athletic Performance</option>
+                    </select>
+                </div>
+
+                <div class="pf-form-row">
+                    <label for="program">Preferred Program</label>
+                    <select id="program" name="program" required>
+                        <option value="">Select a program</option>
+                        <option>Strength Training</option>
+                        <option>Fat Loss Program</option>
+                        <option>Muscle Gain Program</option>
+                        <option>Athlete Performance</option>
+                        <option>Personal Training 1-on-1</option>
+                        <option>Group Classes</option>
+                    </select>
+                </div>
+
+                <div class="pf-form-row two-col">
+                    <div>
+                        <label for="time">Preferred Time</label>
+                        <select id="time" name="time">
+                            <option>5 AM – 8 AM</option>
+                            <option>8 AM – 11 AM</option>
+                            <option>4 PM – 7 PM</option>
+                            <option>7 PM – 10 PM</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="days">Days / Week</label>
+                        <select id="days" name="days">
+                            <option>3 Days</option>
+                            <option>4 Days</option>
+                            <option>5 Days</option>
+                            <option>6 Days</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pf-form-row">
+                    <label for="message">Anything we should know?</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Injuries, experience level, or questions"></textarea>
+                </div>
+
+                <button type="submit" class="pf-btn-primary pf-full-btn">
+                    Submit Enquiry
+                </button>
+            </form>
+        </div>
+
+        <div class="pf-join-info">
+            <h3>Why Join POWER FLEX?</h3>
+            <ul>
+                <li>Senior professional coaches with real gym experience</li>
+                <li>Clean, premium equipment and safe training environment</li>
+                <li>Personal guidance for workout and basic nutrition</li>
+                <li>Progress tracking every 4 weeks</li>
+            </ul>
+
+            <div class="pf-contact-mini">
+                <p><strong>Call:</strong> +91-98765-43210</p>
+                <p><strong>Location:</strong> POWER FLEX – Your City, Main Street</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pf-footer">
+        <p>© 2025 POWER FLEX. All rights reserved.</p>
+    </footer>
+</body>
+</html>

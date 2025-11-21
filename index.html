@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POWER FLEX – Premium Fitness Gym</title>
+
+    <meta name="description" content="Power Flex Gym – Professional trainers, personalized workout plans, modern equipment, and premium fitness experience.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <!-- Mobile Menu -->
+            <div class="navSlide" onclick="toggleMenu()">
+                <div class="box">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <span class="logo">POWER FLEX</span>
+
+            <ul class="navLinks">
+                <li><a class="nava" href="#home">HOME</a></li>
+                <li><a class="nava" href="#about">ABOUT</a></li>
+                <li><a class="nava" href="#coaches">COACHES</a></li>
+                <li><a class="nava" href="#contact">CONTACT</a></li>
+                <li><a href="join.html" class="pf-join-btn-nav ">Join Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="heroSec">
+        <div class="overlay"></div>
+        <div class="hero">
+            
+            <h1 class="heroh1">POWER FLEX</h1>
+            <h3>Your Best Fitness Gym With Senior Professional Coaches</h3>
+            <p>Power Flex is a next-level fitness space for athletes, beginners, and transformation goals. Experience premium workouts with high-quality coaching and modern equipment.</p>
+
+            <div class="heroBtnCont">
+                <button class="heroBtn">Know More</button>
+                <a href="programs.html" class="pf-btn-primary heroBtn">View Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features reveal">
+        <div class="featuresCont">
+            <div class="feature">12+ <span class="featureTxt">Years Of Service</span></div>
+            <div class="feature">15+ <span class="featureTxt">Trainers</span></div>
+            <div class="feature">878+ <span class="featureTxt">Members</span></div>
+            <div class="feature">98% <span class="featureTxt">Satisfaction</span></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="aboutSec reveal">
+        <div class="aboutCont bigAbout">
+
+            <div class="aboutText">
+                <h2>About Us</h2>
+
+                <p class="aboutLarge">
+                    Power Flex is a premium, transformation-focused fitness space designed
+                    for people who want real and long-lasting results. Our workouts combine
+                    science-backed training, modern equipment, and an energetic atmosphere.
+                </p>
+
+                <p class="aboutLarge">
+                    We focus on strength training, conditioning, fat loss programs, muscle building,
+                    functional training, and athletic performance. Every member receives 
+                    personalized guidance, ensuring visible results week by week.
+                </p>
+
+                <p class="aboutSmall">
+                    Our facility includes advanced machines, a free-weight zone, CrossFit turf,
+                    cardio deck, mobility & stretching area, HIIT space, and private coaching rooms.
+                    Power Flex was built for your transformation, physically and mentally.
+                </p>
+            </div>
+
+            <div class="aboutImg bigAboutImg">
+                <img  src="./gymAssets/sushil-ghimire-5UbIqV58CW8-unsplash.jpg" alt="Gym Image">
+                <img  src="./gymAssets/Screenshot_20251114_110328.jpg" alt="Gym Image">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- COACHES -->
+    <section id="coaches" class="coachesSec reveal">
+        <h2 class="secTitle">Meet Our Coaches</h2>
+
+        <div class="coachesCont">
+            <div class="coachCard">
+                <img src="./gymAssets/flex.jpg" alt="Coach">
+                <h3>John Smith</h3>
+                <p>Strength & Conditioning Coach</p>
+            </div>
+
+            <div class="coachCard">
+                <img src="./gymAssets/backpose.jpg" alt="Coach">
+                <h3>Lee</h3>
+                <p>Transformation Specialist</p>
+            </div>
+
+            <div class="coachCard">
+                <img src="./gymAssets/anastase-maragos-7kEpUPB8vNk-unsplash.jpg" alt="Coach">
+                <h3>Johan</h3>
+                <p>CrossFit & HIIT Expert</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contactSec reveal">
+        <h2>Contact Us</h2>
+
+        <div class="contactCont">
+            <form class="contactForm">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button class="contactBtn">Send Message</button>
+            </form>
+
+            <div class="contactInfo">
+                
+                <p><strong>Location:</strong> Power Flex Gym, Pondicherry,India</p>
+                <p><strong>Email:</strong> support@powerflex.com</p>
+                <p><strong>Phone:</strong> +91 9876543210</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 POWER FLEX Gym. All Rights Reserved.</p>
+    </footer>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".navLinks").classList.toggle("active");
+}
+document.querySelector(".navLinks").addEventListener('mouseleave',()=>document.querySelector(".navLinks").classList.remove("active"))
+
+// Scroll Animation
+function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+            reveals[i].classList.add("active");
+        }
+    }
+}
+window.addEventListener("scroll", reveal);
+</script>
+
+</body>
+</html>
